@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试</title>
+<script>
+function test1(){
+    
+    window.alert(document.getElementById("value").value);
+}
+ 
+function test2(){
+ 
+    window.alert(document.getElementById("innerHTML").innerHTML);
+ 
+}
+ 
+function test3(){
+ 
+    window.alert(document.getElementById("innerText").innerText);
+ 
+}
+function test4(){
+ 
+ document.getElementById("innerText").innerText="<p>123456</p>"
+
+}
+function test5(){
+ 
+ document.getElementById("innerText").innerHTML="<p>123456</p>"
+
+}
+</script>
+</head>
+<body id="innerHTML">
+消息内容：<span id="innerText"><button>消息</button></span><br/>
+<input type="text" id="value" /><br/>
+<input type="button" onclick="test1()" value="value" /><br/>
+<input type="button" onclick="test2()" value="innerHTML"/><br/>
+<input type="button" onclick="test3()" value="innerText"/><br/>
+<input type="button" onclick="test4()" value="yan"/><br/>
+<input type="button" onclick="test5()" value="qian"/><br/>
+</body>
+</html>
